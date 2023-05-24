@@ -1,35 +1,19 @@
-# Vue.js
+# exa844-projeto-vue
 
-This directory is a brief example of a [Vue.js](https://vuejs.org/) app that can be deployed to Vercel with zero configuration.
-
-## Deploy Your Own
-
-Deploy your own Vue.js project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vue&template=vue)
-
-_Live Example: https://vue-template.vercel.app_
-
-## Running Locally
-
+## Project setup
 ```
-yarn install
+npm install
 ```
 
-#### Compile and hot-reload for development
-
+### Compiles and hot-reloads for development
 ```
-yarn serve
-```
-
-#### Compile and minify for production
-
-```
-yarn build
+npm run serve
 ```
 
-#### Lint and fix files
+### Compiles and minifies for production
+```
+npm run build
+```
 
-```
-yarn lint
-```
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
