@@ -5,13 +5,13 @@
                 <b-icon icon="house-door"></b-icon> Home
             </b-nav-item>
 
-            <b-nav-item to="/library" style="border-radius: 20%; border-color: #fff;">
+            <!-- <b-nav-item to="/library" style="border-radius: 20%; border-color: #fff;">
                 <b-icon icon="bookmark"></b-icon>  Biblioteca 
             </b-nav-item>
 
             <b-nav-item to="/about" style="border-radius: 20%; border-color: #fff;">
                 <b-icon icon="info-lg"></b-icon>  Sobre 
-            </b-nav-item>
+            </b-nav-item> -->
         </b-nav>
         <div v-if="isSidebarOpen" class="sidebar-toggle" @click="toggleSidebar">
             <i class="bi bi-chevron-left"></i>
