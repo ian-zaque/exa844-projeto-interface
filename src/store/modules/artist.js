@@ -25,7 +25,7 @@ const mutations = {
 }
 
 // artist?name=
-const API_URL = "http://exa844-lkaguollhq-rj.a.run.app/hello_http/";
+const API_URL = "https://exa844-lkaguollhq-rj.a.run.app/hello_http/";
 
 const actions = {
     fetchArtist(state, query) {
