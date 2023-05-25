@@ -12,21 +12,16 @@ const routes = [
     name: 'home',
     component: Search
   },
-  // {
-  //   path: '/about',
-  //   name: 'sobre',
-  //   component: About
-  // },
-  // {
-  //   path: '/search',
-  //   name: 'search',
-  //   component: Search,
-  // },
-  // {
-  //   path: '/library',
-  //   name: 'library',
-  //   component: Library,
-  // }
+  {
+    path: '/about',
+    name: 'sobre',
+    component: About
+  },
+  {
+    path: '/library',
+    name: 'library',
+    component: Library,
+  }
 ]
 
 const router = new VueRouter({

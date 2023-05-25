@@ -9,7 +9,7 @@
 
             <b-row align-h="start">
                 <b-col cols="9">
-                    <b-input v-model="searchQuery" placeholder="Busque por artistas, álbuns ou músicas..."></b-input>
+                    <b-input v-model="searchQuery" class="spot-input" placeholder="Busque por artistas, álbuns ou músicas..."></b-input>
                 </b-col>
                 <b-col cols="3">
                     <b-button @click="performSearch()" pill variant="light">
@@ -26,7 +26,7 @@
 
             <b-row v-else-if="searchResults.length > 0">
                 <hr>
-                <h6 class="container" style="color:#fff">Resultados encontrados: {{ searchResults.length }}</h6>
+                <h6 class="container" style="color:#fff">{{ searchResults.length }} resultados encontrados para "{{ staticQuery }}"</h6>
                 <div class="search-result">
                     <b-row>
                         <b-col v-for="(artist, id) in searchResults" :key="id" cols="12">
@@ -38,7 +38,7 @@
 
             <b-row v-else>
                 <br>
-                <empty-space :query="searchQuery" />
+                <empty-space />
             </b-row>
         </div>
     </div>
@@ -67,7 +67,7 @@ export default {
     },
 
     computed:{
-        ...mapGetters({ searchResults: "getResults", errors: "getErrors", isLoading: "isLoading" }),
+        ...mapGetters({ searchResults: "getResults", staticQuery: "getStaticQuery", errors: "getErrors", isLoading: "isLoading" }),
     },
 
     methods: {
@@ -82,7 +82,13 @@ export default {
   
 <style scoped>
 .blackened {
-    background-color: black;
+    background-color: #282828;
+}
+
+.spot-input{
+    background-color: #282828; 
+    color: #fff;
+    border-color: #fff;
 }
 
 .search-title {

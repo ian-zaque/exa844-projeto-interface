@@ -14,7 +14,7 @@
                     <b-card-body>
                         <b-row class="container">
                             <a class="h6 artist-genres" :href="artist.URL"> 
-                                <b-icon style="color: #fff" class="h4" :href="artist.URL" icon="headphones"></b-icon>
+                                <b-icon style="color: #1db954" class="h4" :href="artist.URL" icon="headphones"></b-icon>
                                 <em>Ouvir {{ artist.name }} </em> 
                             </a>
                         </b-row>
@@ -29,7 +29,7 @@
                             <br>
                             <b-row v-b-toggle="'albums' + artist.UID" align-h="start">
                                 <b-col>
-                                    <h3 class="section-title">Albums <b-icon icon="chevron-compact-right"></b-icon> </h3>
+                                    <h3 class="section-title" style="color: #1db954">Albums <b-icon icon="chevron-compact-right"></b-icon> </h3>
                                 </b-col>
                             </b-row>
 
@@ -56,7 +56,7 @@
                             <br>
                             <b-row v-b-toggle="'singles' + artist.UID" align-h="start">
                                 <b-col>
-                                    <h3 class="section-title">Singles e EPs <b-icon icon="chevron-compact-right"></b-icon> </h3>
+                                    <h3 class="section-title" style="color: #1db954">Singles e EPs <b-icon icon="chevron-compact-right"></b-icon> </h3>
                                 </b-col>
                             </b-row>
 
@@ -142,6 +142,10 @@ export default {
 
 .artist-details {
     margin-left: 20px;
+}
+
+.green-text {
+    color: #1db954;
 }
 
 .artist-name {
